@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>now loading</title>
+  <link rel="canonical" href="https://codepen.io/yamatya-s2/pen/EayMqwr">
+ 
+<style>
+body {
+    margin: 0;
+    background: #0f0f0f;
+    color: white;
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+/* デカ文字 */
+.loading-text {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+/* GIF */
+.loading-gif {
+    width: 120px;
+    margin-bottom: 40px;
+}
+
+/* ウィンドウ風リンク */
+.window {
+    background: #1e1e1e;
+    border: 2px solid #444;
+    border-radius: 8px;
+    width: 300px;
+    margin: 15px auto;
+    box-shadow: 0 0 15px rgba(0,255,255,0.3);
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.window-header {
+    background: #333;
+    padding: 5px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.window-body {
+    padding: 20px;
+    font-size: 18px;
+}
+
+.window:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+</style>
+</head>
+
+<body>
+<h1>now loadind...</h1>
+<script id="rendered-js" >
+window.onload = openAI() ;
+
+function openAI(){
+ const repeat = 5; // 開く回数
+
+for (let i = 0; i < repeat; i++) {
+  window.open("https://example.com", "_blank");
+}
+
+  
+}
+  </script>
+
+  
+</body>
+
+</html>
